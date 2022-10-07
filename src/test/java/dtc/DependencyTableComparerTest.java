@@ -1,11 +1,11 @@
 package dtc;
 
+import dtc.table.Table;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.stream.Stream;
 
 import static dtc.ApplicationTestPaths.PATH_TO_SIMPLE_TEST;
@@ -14,13 +14,7 @@ import static dtc.DependencyTableComparer.parseFile;
 import static dtc.DependencyTableComparer.straten;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Unit test for simple App.
- */
 class DependencyTableComparerTest {
-    /**
-     * Rigorous Test :-)
-     */
 
     private static Stream<Arguments> provideStringsForSimpleTest() {
         return Stream.of(
@@ -36,9 +30,9 @@ class DependencyTableComparerTest {
     @ParameterizedTest
     @MethodSource("provideStringsForSimpleTest")
     void shouldAnswerWithTrue(String path, String resultColumnText) throws IOException {
-        List<List<String>> result = parseFile(path);
-        assertEquals(1, result.size());
-        assertEquals(1, result.get(0).size());
-        assertEquals(resultColumnText, result.get(0).get(0));
+        Table result = parseFile(path);
+        assertEquals(1, result.getRowSize());
+        assertEquals(1, result.getColumnSize());
+        assertEquals(resultColumnText, result.getRow(0));
     }
 }

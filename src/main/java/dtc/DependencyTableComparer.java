@@ -1,10 +1,12 @@
 package dtc;
 
+import dtc.table.Table;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import static dtc.ApplicationsPaths.PATH_TO_CONFLUENCE_PAGE;
@@ -17,13 +19,16 @@ import static dtc.TableUtils.extractTable;
 public class DependencyTableComparer {
     public static final Straten straten = new Straten();
     public static void main(String[] args) throws IOException {
-        List<List<String>> confluenceTable = parseFile(PATH_TO_CONFLUENCE_PAGE);
+        Table confluenceTable = parseFile(PATH_TO_CONFLUENCE_PAGE);
+        List<Table> straatTables = new ArrayList<>();
         for (Straat straat : straten.getAll() ) {
-            List<List<String>> straatTable = parseFile(straat.getPathToSonarQubePage());
+            straatTables.add(parseFile(straat.getPathToSonarQubePage()));
         }
+//        TableCompareResults tableCompareResults = CompareConfluenceTableWithStratenTables(confluenceTable, straatTables);
+//        printResults(tableCompareResults);
     }
 
-    protected static List<List<String>> parseFile(String path) throws IOException {
+    protected static Table parseFile(String path) throws IOException {
         File confluencePage = new File(path);
         Document parsedConfluencePage = Jsoup.parse(confluencePage);
         return extractTable(parsedConfluencePage);
