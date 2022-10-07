@@ -9,9 +9,8 @@ import java.io.IOException;
 import java.util.stream.Stream;
 
 import static dtc.ApplicationTestPaths.PATH_TO_SIMPLE_TEST;
-import static dtc.ApplicationsPaths.PATH_TO_CONFLUENCE_PAGE;
-import static dtc.DependencyTableComparer.parseFile;
 import static dtc.DependencyTableComparer.straten;
+import static dtc.utilities.ApplicationsPaths.PATH_TO_CONFLUENCE_PAGE;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DependencyTableComparerTest {
@@ -30,7 +29,7 @@ class DependencyTableComparerTest {
     @ParameterizedTest
     @MethodSource("provideStringsForSimpleTest")
     void shouldAnswerWithTrue(String path, String resultColumnText) throws IOException {
-        Table result = parseFile(path);
+        Table result = new Table(path);
         assertEquals(1, result.getRowSize());
         assertEquals(1, result.getColumnSize());
         assertEquals(resultColumnText, result.getRow(0));

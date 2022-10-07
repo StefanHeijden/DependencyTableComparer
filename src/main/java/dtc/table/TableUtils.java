@@ -1,6 +1,5 @@
-package dtc;
+package dtc.table;
 
-import dtc.table.Table;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -10,13 +9,13 @@ import java.util.List;
 
 public class TableUtils {
 
-    public static Table extractTable(Document doc) {
+    public static List<List<String>> extractTable(Document doc) {
         List<List<String>> tableText = new ArrayList<>();
         Elements rows = doc.select("tr");
         for(Element row :rows) {
             tableText.add(extractRow(row));
         }
-        return new Table(tableText);
+        return tableText;
     }
     
     private static List<String> extractRow(Element row) {

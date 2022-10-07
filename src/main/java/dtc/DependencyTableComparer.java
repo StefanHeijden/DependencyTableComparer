@@ -1,16 +1,17 @@
 package dtc;
 
-import dtc.table.Table;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
+import dtc.table.ConfluenceTable;
+import dtc.table.StraatTable;
+import dtc.table.TableCompareResultsOverview;
+import dtc.utilities.Straat;
+import dtc.utilities.Straten;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static dtc.ApplicationsPaths.PATH_TO_CONFLUENCE_PAGE;
-import static dtc.TableUtils.extractTable;
+import static dtc.table.TableComparer.CompareConfluenceTableWithStratenTables;
+import static dtc.utilities.ApplicationsPaths.PATH_TO_CONFLUENCE_PAGE;
 
 /**
  * Dependency Table Comparer
@@ -19,19 +20,13 @@ import static dtc.TableUtils.extractTable;
 public class DependencyTableComparer {
     public static final Straten straten = new Straten();
     public static void main(String[] args) throws IOException {
-        Table confluenceTable = parseFile(PATH_TO_CONFLUENCE_PAGE);
-        List<Table> straatTables = new ArrayList<>();
+        ConfluenceTable confluenceTable = new ConfluenceTable(PATH_TO_CONFLUENCE_PAGE);
+        List<StraatTable> straatTables = new ArrayList<>();
         for (Straat straat : straten.getAll() ) {
-            straatTables.add(parseFile(straat.getPathToSonarQubePage()));
+            straatTables.add(new StraatTable(straat.getPathToSonarQubePage(), straat));
         }
-//        TableCompareResults tableCompareResults = CompareConfluenceTableWithStratenTables(confluenceTable, straatTables);
+        TableCompareResultsOverview tableCompareResults = CompareConfluenceTableWithStratenTables(confluenceTable, straatTables);
 //        printResults(tableCompareResults);
-    }
-
-    protected static Table parseFile(String path) throws IOException {
-        File confluencePage = new File(path);
-        Document parsedConfluencePage = Jsoup.parse(confluencePage);
-        return extractTable(parsedConfluencePage);
     }
 
 }

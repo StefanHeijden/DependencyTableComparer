@@ -1,8 +1,8 @@
-package dtc;
+package dtc.utilities;
 
-import static dtc.ApplicationsPaths.FILE_TYPE;
-import static dtc.ApplicationsPaths.PATH_TO_INPUT;
-import static dtc.ApplicationsPaths.PATH_TO_RESULTS_FILE;
+import static dtc.utilities.ApplicationsPaths.FILE_TYPE;
+import static dtc.utilities.ApplicationsPaths.PATH_TO_INPUT;
+import static dtc.utilities.ApplicationsPaths.PATH_TO_RESULTS_FILE;
 
 public class Straat {
     private String name;

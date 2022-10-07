@@ -1,4 +1,4 @@
-package dtc;
+package dtc.utilities;
 
 public class ApplicationsPaths {
     public static final String PATH_TO_INPUT = "input/";
