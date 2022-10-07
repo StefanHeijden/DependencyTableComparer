@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Straten {
-    private final Map<String, Straat> straten;
+    private final Map<String, Straat> currentStraten;
     private static final String[] STRAAT_NAMES = {
             "BZ",
             "DEF",
@@ -14,17 +14,18 @@ public class Straten {
             "ROP"
     };
     public Straten() {
-        straten = new HashMap<>();
+        currentStraten = new HashMap<>();
         for (String straatName : STRAAT_NAMES) {
-            straten.put(straatName, new Straat(straatName));
+            final Straat straat = new Straat(straatName);
+            currentStraten.put(straatName, straat);
         }
     }
 
     public Straat get(String straatName) {
-        return straten.get(straatName);
+        return currentStraten.get(straatName);
     }
 
     public Collection<Straat> getAll() {
-        return straten.values();
+        return currentStraten.values();
     }
 }
