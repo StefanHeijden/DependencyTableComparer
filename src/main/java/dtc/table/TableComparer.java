@@ -1,5 +1,6 @@
 package dtc.table;
 
+import java.util.Collections;
 import java.util.List;
 
 public class TableComparer {
@@ -13,7 +14,18 @@ public class TableComparer {
     }
 
     protected static TableCompareResults CompareConfluenceTableWithStratenTable(ConfluenceTable confluenceTable, StraatTable straatTable) {
-        return new TableCompareResults(straatTable);
+        StraatTable oldTableFromConfluence = confluenceTable.getStraatTable(straatTable.getStraat());
+        List<String> removedRows = getRemovedRows(oldTableFromConfluence, straatTable);
+        List<String> addedRows = getAddedRows(oldTableFromConfluence, straatTable);
+        return new TableCompareResults(straatTable, removedRows, addedRows);
+    }
+
+    private static List<String> getAddedRows(StraatTable oldTableFromConfluence, StraatTable straatTable) {
+        return Collections.emptyList();
+    }
+
+    private static List<String> getRemovedRows(StraatTable oldTableFromConfluence, StraatTable straatTable) {
+        return Collections.emptyList();
     }
 
     private TableComparer(){}

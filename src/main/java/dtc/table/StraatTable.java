@@ -21,4 +21,5 @@ public class StraatTable extends Table{
     public Straat getStraat() {
         return straat;
     }
+
 }

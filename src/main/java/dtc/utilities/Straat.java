@@ -34,4 +34,14 @@ public class Straat {
     public String getPathToResultFile() {
         return PATH_TO_RESULTS_FILE + name;
     }
+
+    @Override
+    public boolean equals(Object compareTo) {
+        return compareTo instanceof Straat && ((Straat) compareTo).getStraatName().equals(getStraatName());
+    }
+
+    @Override
+    public int hashCode() {
+        return getStraatName().hashCode();
+    }
 }
