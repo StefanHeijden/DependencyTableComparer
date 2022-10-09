@@ -1,38 +1,46 @@
 package dtc.table;
 
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
-import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
-import static dtc.table.TableUtils.extractTable;
-
 public class Table {
-    List<List<String>> tableContent;
+    List<String> header;
+    List<List<String>> body;
     public Table(String pathToFile) throws IOException {
-        Document document = getDocumentFromFile(pathToFile);
-        tableContent = extractTable(document);
+        Document document = TableUtils.getDocumentFromFile(pathToFile);
+        Element table = TableUtils.extractTables(document).get(0);
+        initializeHeaderAndBody(TableUtils.extractHeaderRowsFromTable(table), TableUtils.extractBodyRowsFromTable(table));
     }
 
-    private Document getDocumentFromFile(String path) throws IOException {
-        File confluencePage = new File(path);
-        return Jsoup.parse(confluencePage);
+    public Table(Elements header, Elements body) {
+        initializeHeaderAndBody(header, body);
+    }
+
+    private void initializeHeaderAndBody(Elements header, Elements body) {
+        this.header = TableUtils.extractRow(header.get(0));
+        this.body = new ArrayList<>();
+        for (Element row : body ) {
+            this.body.add(TableUtils.extractRow(row));
+        }
     }
 
     public int getRowSize() {
-        return tableContent.size();
+        return body.size();
     }
 
     public int getColumnSize() {
-        if(!tableContent.isEmpty()) {
-            return tableContent.size();
+        if(!body.isEmpty()) {
+            return body.size();
         }
         return 0;
     }
 
     public String getRow(int rowNo) {
-        return String.join(" ", tableContent.get(rowNo));
+        return String.join(" ", body.get(rowNo));
     }
 }

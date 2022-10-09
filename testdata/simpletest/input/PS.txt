@@ -5,11 +5,20 @@
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 <table>
+<thead>
+<tr>
+<td>
+Straat
+</td>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>
 PS
 </td>
 </tr>
+</tbody>
 </table>
 
 </body>

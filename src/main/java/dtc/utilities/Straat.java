@@ -7,8 +7,12 @@ import static dtc.utilities.ApplicationsPaths.PATH_TO_RESULTS_FILE;
 public class Straat {
     private String name;
 
-    Straat(String name) {
+    public Straat(String name) {
         this.name = name;
+    }
+
+    public String getStraatName() {
+        return name;
     }
 
     public String getPathToSonarQubePage() {
