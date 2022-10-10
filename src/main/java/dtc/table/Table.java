@@ -6,15 +6,17 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Table {
     List<String> header;
     List<List<String>> body;
+
     public Table(String pathToFile) throws IOException {
         Document document = TableUtils.getDocumentFromFile(pathToFile);
-        Element table = TableUtils.extractTables(document).get(0);
-        initializeHeaderAndBody(TableUtils.extractHeaderRowsFromTable(table), TableUtils.extractBodyRowsFromTable(table));
+        Element table = TableUtils.getDependencySummaryTable(document);
+        initializeHeaderAndBody(TableUtils.extractVulnerableBodyRowsFromTable(table), TableUtils.extractBodyRowsFromTable(table));
     }
 
     public Table(Elements header, Elements body) {
@@ -22,7 +24,11 @@ public class Table {
     }
 
     private void initializeHeaderAndBody(Elements header, Elements body) {
-        this.header = TableUtils.extractRow(header.get(0));
+        if(!header.isEmpty()) {
+            this.header = TableUtils.extractRow(header.get(0));
+        } else {
+            this.header = Collections.emptyList();
+        }
         this.body = new ArrayList<>();
         for (Element row : body ) {
             this.body.add(TableUtils.extractRow(row));
@@ -42,5 +48,9 @@ public class Table {
 
     public String getRow(int rowNo) {
         return String.join(" ", body.get(rowNo));
+    }
+
+    public int rows() {
+        return body.size();
     }
 }

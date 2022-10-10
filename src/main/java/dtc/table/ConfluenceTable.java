@@ -17,7 +17,8 @@ public class ConfluenceTable {
             "DEF",
             "ROP",
             "PS",
-            "BZ"
+            "BZ",
+            "Alle straten"
     };
     private final List<StraatTable> straatTables;
     public ConfluenceTable(String pathToConfluencePage) throws IOException {

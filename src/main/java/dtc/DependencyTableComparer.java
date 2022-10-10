@@ -26,7 +26,11 @@ public class DependencyTableComparer {
             straatTables.add(new StraatTable(straat.getPathToSonarQubePage(), straat));
         }
         TableCompareResultsOverview tableCompareResults = CompareConfluenceTableWithStratenTables(confluenceTable, straatTables);
-//        printResults(tableCompareResults);
+        printResults(tableCompareResults);
+    }
+
+    private static void printResults(TableCompareResultsOverview tableCompareResults) {
+        // print
     }
 
 }

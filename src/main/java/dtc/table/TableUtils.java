@@ -47,5 +47,20 @@ public class TableUtils {
         return tables.select("tbody").select("tr");
     }
 
+    public static Elements extractVulnerableBodyRowsFromTable(Element tables) {
+        return tables.select("tbody").select(".vulnerable");
+    }
+
     private TableUtils() {}
+
+    public static Element getDependencySummaryTable(Document document) {
+        Elements tables = Jsoup.parse(document.select("iframe").attr("srcdoc")).select("#summaryTable");
+        if (tables.size() > 1) {
+            throw new IllegalArgumentException("Too many DependencySummaryTables where found");
+        }
+        if (tables.isEmpty()) {
+            throw new IllegalArgumentException("No DependencySummaryTable was found");
+        }
+        return Jsoup.parse(document.select("iframe").attr("srcdoc")).select("#summaryTable").get(0);
+    }
 }
