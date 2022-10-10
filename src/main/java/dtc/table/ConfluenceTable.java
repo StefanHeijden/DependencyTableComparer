@@ -33,7 +33,7 @@ public class ConfluenceTable {
     private StraatTable createStraatTable(Element table, String straat) {
         Elements header = TableUtils.extractHeaderRowsFromTable(table);
         Elements body = TableUtils.extractBodyRowsFromTable(table);
-        return new StraatTable(header, body, straat);
+        return new StraatTableFromConfluence(header, body, new Straat(straat));
     }
 
     public Iterator<StraatTable> getStraatTables() {

@@ -2,6 +2,7 @@ package dtc;
 
 import dtc.table.ConfluenceTable;
 import dtc.table.StraatTable;
+import dtc.table.StraatTableFromSonarQube;
 import dtc.table.TableCompareResultsOverview;
 import dtc.utilities.Straat;
 import dtc.utilities.Straten;
@@ -23,7 +24,7 @@ public class DependencyTableComparer {
         ConfluenceTable confluenceTable = new ConfluenceTable(PATH_TO_CONFLUENCE_PAGE);
         List<StraatTable> straatTables = new ArrayList<>();
         for (Straat straat : straten.getAll() ) {
-            straatTables.add(new StraatTable(straat.getPathToSonarQubePage(), straat));
+            straatTables.add(new StraatTableFromSonarQube(straat.getPathToSonarQubePage(), straat));
         }
         TableCompareResultsOverview tableCompareResults = CompareConfluenceTableWithStratenTables(confluenceTable, straatTables);
         printResults(tableCompareResults);

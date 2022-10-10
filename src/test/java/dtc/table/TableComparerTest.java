@@ -16,7 +16,7 @@ class TableComparerTest {
     @Test
     void simpleTest() throws IOException {
         ConfluenceTable confluenceTable = new ConfluenceTable(PATH_TO_SIMPLE_TEST + PATH_TO_CONFLUENCE_PAGE);
-        StraatTable straatTable = new StraatTable(PATH_TO_SIMPLE_TEST + straten.get(TABLE_ORDER_ON_PAGE[0]).getPathToSonarQubePage(),
+        StraatTable straatTable = new StraatTableFromSonarQube(PATH_TO_SIMPLE_TEST + straten.get(TABLE_ORDER_ON_PAGE[0]).getPathToSonarQubePage(),
                 straten.get(TABLE_ORDER_ON_PAGE[0]));
         TableCompareResults tableCompareResults = CompareConfluenceTableWithStratenTable(confluenceTable, straatTable);
         assertEquals(1, tableCompareResults.getNewRows().size());

@@ -9,8 +9,6 @@ i
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 X
 (src/main/java/dtc/utilities/Straten.java,d\6\d6b643f246eb123766547159829ca5137c095854
-b
-2src/test/java/dtc/DependencyTableComparerTest.java,6\d\6d1853584a1c09487f472761df6db5413887227f
 Q
 !testdata/simpletest/input/ROP.txt,4\c\4c3960389cc4720ff0d58ae20fb64c007af5d1fe
 P
@@ -66,5 +64,3 @@ X
 (testdata/simpletest/input/confluence.txt,4\e\4ef6b2ef66674b8ac30a177342d93e0d9c1cb6ab
 h
 8src/main/java/dtc/table/TableCompareResultsOverview.java,a\1\a130cf04719e4b0c5de96f7e6ea3bf842058dc34
-`
-0src/main/java/dtc/table/TableCompareResults.java,9\c\9c45b3745f1619fe7ddffeec7101233caad5c797
