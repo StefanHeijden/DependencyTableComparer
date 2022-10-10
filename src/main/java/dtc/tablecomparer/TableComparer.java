@@ -1,4 +1,7 @@
-package dtc.table;
+package dtc.tablecomparer;
+
+import dtc.table.ConfluenceTable;
+import dtc.table.StraatTable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +16,7 @@ public class TableComparer {
         return tableCompareResultsOveriew;
     }
 
-    protected static TableCompareResults CompareConfluenceTableWithStratenTable(ConfluenceTable confluenceTable, StraatTable straatTable) {
+    public static TableCompareResults CompareConfluenceTableWithStratenTable(ConfluenceTable confluenceTable, StraatTable straatTable) {
         StraatTable oldTableFromConfluence = confluenceTable.getStraatTable(straatTable.getStraat());
         List<String> addedRows = compareWhetherFirstTableContainsEntriesNotInSecondTable(straatTable, oldTableFromConfluence);
         List<String> removedRows = compareWhetherFirstTableContainsEntriesNotInSecondTable(oldTableFromConfluence, straatTable);

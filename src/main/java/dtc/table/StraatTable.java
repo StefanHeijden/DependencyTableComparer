@@ -6,11 +6,13 @@ import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class StraatTable {
     List<String> header;
     List<List<String>> body;
+    List<Element> bodyElements;
 
     private final Straat straat;
 
@@ -18,6 +20,7 @@ public class StraatTable {
         this.straat = straat;
         header = new ArrayList<>();
         body = new ArrayList<>();
+        bodyElements = new ArrayList<>();
     }
 
     public Straat getStraat() {
@@ -32,6 +35,7 @@ public class StraatTable {
         }
         this.body = new ArrayList<>();
         for (Element row : body ) {
+            bodyElements.add(row);
             this.body.add(TableUtils.extractRow(row));
         }
     }
@@ -53,5 +57,13 @@ public class StraatTable {
 
     public int rows() {
         return body.size();
+    }
+
+    public List<String> toHTMLTable() {
+        return Collections.emptyList();
+    }
+
+    public Iterator<Element> getRows() {
+        return bodyElements.iterator();
     }
 }

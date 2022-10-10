@@ -3,7 +3,7 @@ package dtc;
 import dtc.table.ConfluenceTable;
 import dtc.table.StraatTable;
 import dtc.table.StraatTableFromSonarQube;
-import dtc.table.TableCompareResultsOverview;
+import dtc.tablecomparer.TableCompareResultsOverview;
 import dtc.utilities.Straat;
 import dtc.utilities.Straten;
 
@@ -11,7 +11,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static dtc.table.TableComparer.CompareConfluenceTableWithStratenTables;
+import static dtc.tablecomparer.TableComparer.CompareConfluenceTableWithStratenTables;
+import static dtc.tableprinter.TablePrinter.printResults;
 import static dtc.utilities.ApplicationsPaths.PATH_TO_CONFLUENCE_PAGE;
 
 /**
@@ -28,10 +29,6 @@ public class DependencyTableComparer {
         }
         TableCompareResultsOverview tableCompareResults = CompareConfluenceTableWithStratenTables(confluenceTable, straatTables);
         printResults(tableCompareResults);
-    }
-
-    private static void printResults(TableCompareResultsOverview tableCompareResults) {
-        // print
     }
 
 }

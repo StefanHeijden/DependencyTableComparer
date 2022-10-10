@@ -1,4 +1,4 @@
-package dtc.table;
+package dtc.tablecomparer;
 
 import java.util.ArrayList;
 import java.util.Iterator;
