@@ -14,18 +14,19 @@ public class StraatTableRemovedDependencies extends StraatTable {
 
     public StraatTableRemovedDependencies(TableCompareResultsOverview tableCompareResults) {
         super(new Straat("removed"));
-        generateRemovedDependencies(tableCompareResults);
         initializeHeader(tableCompareResults.getHeader());
+        initializeBody(generateRemovedDependencies(tableCompareResults));
+        removeDuplicatesFromBody();
     }
 
-    private void generateRemovedDependencies(TableCompareResultsOverview tableCompareResults) {
+    private Elements generateRemovedDependencies(TableCompareResultsOverview tableCompareResults) {
         List<Element> removedDependencies = new ArrayList<>();
         Iterator<TableCompareResults> iterator = tableCompareResults.getTableCompareResults();
         while(iterator.hasNext()) {
             TableCompareResults tableCompareResult = iterator.next();
             removedDependencies.addAll(tableCompareResult.getRemovedRows());
         }
-        initializeBody(new Elements(removedDependencies));
+        return new Elements(removedDependencies);
     }
 
 }

@@ -14,18 +14,19 @@ public class StraatTableForHighVulnerabilties extends StraatTable {
 
     public StraatTableForHighVulnerabilties(TableCompareResultsOverview tableCompareResults) {
         super(new Straat("alle straten"));
-        generateNewStraatTableForHighVulnerabilities(tableCompareResults);
         initializeHeader(tableCompareResults.getHeader());
+        initializeBody(generateNewStraatTableForHighVulnerabilities(tableCompareResults));
+        removeDuplicatesFromBody();
     }
 
-    private void generateNewStraatTableForHighVulnerabilities(TableCompareResultsOverview tableCompareResults) {
+    private Elements generateNewStraatTableForHighVulnerabilities(TableCompareResultsOverview tableCompareResults) {
         List<Element> highVulnerabilities = new ArrayList<>();
         Iterator<TableCompareResults> iterator = tableCompareResults.getTableCompareResults();
         while(iterator.hasNext()) {
             StraatTable straatTable = iterator.next().getStraatTable();
             highVulnerabilities.addAll(getHighVulnerabilitiesFromAStraatTable(straatTable));
         }
-        initializeBody(new Elements(highVulnerabilities));
+        return new Elements(highVulnerabilities);
     }
 
     private List<Element> getHighVulnerabilitiesFromAStraatTable(StraatTable straatTable) {

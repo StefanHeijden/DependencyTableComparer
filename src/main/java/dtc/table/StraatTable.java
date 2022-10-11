@@ -79,4 +79,22 @@ public class StraatTable {
     public Iterator<Element> getRows() {
         return bodyElements.iterator();
     }
+
+    void removeDuplicatesFromBody() {
+        List<Element> uniqueBodyElements = new ArrayList<>();
+        for (Element row : bodyElements) {
+            if(!doesUniqueBodyElementsContainRow(uniqueBodyElements, row)) {
+                uniqueBodyElements.add(row);
+            }
+        }
+    }
+    
+    private boolean doesUniqueBodyElementsContainRow(List<Element> uniqueBodyElements, Element rowToCheck) {
+        for (Element row : uniqueBodyElements) {
+            if(TableUtils.areRowsEqual(row, rowToCheck)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -14,18 +14,19 @@ public class StraatTableAddedDependencies extends StraatTable {
     
     public StraatTableAddedDependencies(TableCompareResultsOverview tableCompareResults) {
         super(new Straat("added"));
-        generateAddedDependencies(tableCompareResults);
         initializeHeader(tableCompareResults.getHeader());
+        initializeBody(generateAddedDependencies(tableCompareResults));
+        removeDuplicatesFromBody();
     }
 
-    private void generateAddedDependencies(TableCompareResultsOverview tableCompareResults) {
+    private Elements generateAddedDependencies(TableCompareResultsOverview tableCompareResults) {
         List<Element> addedDependencies = new ArrayList<>();
         Iterator<TableCompareResults> iterator = tableCompareResults.getTableCompareResults();
         while(iterator.hasNext()) {
             TableCompareResults tableCompareResult = iterator.next();
             addedDependencies.addAll(tableCompareResult.getAddedRows());
         }
-        initializeBody(new Elements(addedDependencies));
+        return new Elements(addedDependencies);
     }
     
 }

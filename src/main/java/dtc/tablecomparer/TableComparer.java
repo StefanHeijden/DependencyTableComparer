@@ -2,6 +2,7 @@ package dtc.tablecomparer;
 
 import dtc.table.ConfluenceTable;
 import dtc.table.StraatTable;
+import dtc.table.TableUtils;
 import org.jsoup.nodes.Element;
 
 import java.util.ArrayList;
@@ -37,15 +38,11 @@ public class TableComparer {
 
     private static boolean doesTableContainRow(StraatTable tableToCheckWith, Element row) {
         for (int i = 0; i < tableToCheckWith.rows(); i++) {
-            if (areRowsEqual(tableToCheckWith.getRow(i), row)) {
+            if (TableUtils.areRowsEqual(tableToCheckWith.getRow(i), row)) {
                 return false;
             }
         }
         return true;
-    }
-
-    private static boolean areRowsEqual(Element row1, Element row2) {
-        return row1.text().equals(row2.text());
     }
 
     private TableComparer(){}

@@ -66,5 +66,9 @@ public class TableUtils {
         return html;
     }
 
+    public static boolean areRowsEqual(Element row1, Element row2) {
+        return row1.text().equals(row2.text());
+    }
+
     private TableUtils() {}
 }
