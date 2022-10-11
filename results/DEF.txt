@@ -1,0 +1,285 @@
+<table>
+<theader>
+<tr style="text-align:left">
+ <th class="sortable" data-sort="string" title="The name of the dependency">Dependency</th>
+ <th class="sortable" data-sort="string" title="The Common Platform Enumeration">Vulnerability&nbsp;IDs</th>
+ <th class="sortable" data-sort="string" title="The Build Coordinates">Package</th>
+ <th class="sortable" data-sort="float" title="The highest CVE Severity">Highest&nbsp;Severity</th>
+ <th class="sortable" data-sort="int" title="The number of Common Vulnerability and Exposure (CVE) entries">CVE&nbsp;Count</th>
+ <th class="sortable" data-sort="string" title="The confidence rating dependency-check has for the identified CPE">Confidence</th>
+ <th class="sortable" data-sort="int" title="The count of evidence collected to identify the CPE">Evidence&nbsp;Count</th>
+</tr>
+</theader>
+<tbody>
+<tr class=" vulnerable">
+ <td data-sort-value="APACHE-MIME4J-CORE-0.8.4.JAR"><a href="#l9_a7e552628c6587bdd1e2036045f1e06c4d513e32">apache-mime4j-core-0.8.4.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:apache:james:0.8.4:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aapache&amp;cpe_product=cpe%3A%2F%3Aapache%3Ajames&amp;cpe_version=cpe%3A%2F%3Aapache%3Ajames%3A0.8.4" target="_blank">cpe:2.3:a:apache:james:0.8.4:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.apache.james/apache-mime4j-core@0.8.4"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.apache.james/apache-mime4j-core@0.8.4?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.apache.james/apache-mime4j-core@0.8.4</a></td>
+ <td data-sort-value="91.0">CRITICAL</td>
+ <td>5</td>
+ <td data-sort-value="0">Highest</td>
+ <td>35</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="COMMON-3.3.0-V20070426.JAR"><a href="#l29_aa5199e6be73b50c2b26a9c8c12b4e16b73563c8">common-3.3.0-v20070426.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.3.0:20070426:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aeclipse&amp;cpe_product=cpe%3A%2F%3Aeclipse%3Aequinox&amp;cpe_version=cpe%3A%2F%3Aeclipse%3Aequinox%3A3.3.0" target="_blank">cpe:2.3:a:eclipse:equinox:3.3.0:20070426:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.eclipse.equinox/common@3.3.0-v20070426"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.equinox/common@3.3.0-v20070426?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.equinox/common@3.3.0-v20070426</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>22</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="CORE-CMS-2022.13.1-SNAPSHOT.JAR: JQUERY.JS"><a href="#l120_381d929643ba853db61763a1a628570d42ad88c2">core-cms-2022.13.1-SNAPSHOT.jar: jquery.js</a></td>
+ <td data-sort-value=""></td>
+ <td data-sort-value="pkg:javascript/jquery@1.10.2"><a href="https://ossindex.sonatype.org/component/pkg:javascript/jquery@1.10.2?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:javascript/jquery@1.10.2</a></td>
+ <td data-sort-value="61.0">MEDIUM</td>
+ <td>4</td>
+ <td data-sort-value="0"></td>
+ <td>3</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="CORE-CMS-2022.13.1-SNAPSHOT.JAR: JQUERY.MIN.JS"><a href="#l121_d6c1f41972de07b09bfa63d2e50f9ab41ec372bd">core-cms-2022.13.1-SNAPSHOT.jar: jquery.min.js</a></td>
+ <td data-sort-value=""></td>
+ <td data-sort-value="pkg:javascript/jquery@1.11.1"><a href="https://ossindex.sonatype.org/component/pkg:javascript/jquery@1.11.1?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:javascript/jquery@1.11.1</a></td>
+ <td data-sort-value="61.0">MEDIUM</td>
+ <td>4</td>
+ <td data-sort-value="0"></td>
+ <td>3</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="GALLERY-MAGICK-CMS-3.0.2.JAR"><a href="#l237_ad414dae53acace4c13c1029e4c7fc3c134116ec">gallery-magick-cms-3.0.2.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:image-processing_project:image-processing:3.0.2:*:*:*:*:*:*:*cpe:2.3:a:image_processing_software:image_processing_software:3.0.2:*:*:*:*:*:*:*">cpe:2.3:a:image-processing_project:image-processing:3.0.2:*:*:*:*:*:*:*<br>cpe:2.3:a:image_processing_software:image_processing_software:3.0.2:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/org.onehippo.forge.gallery-magick/gallery-magick-cms@3.0.2pkg:maven/org.onehippo.forge.gallery-magick/gallery-magick-cms@3.0.2-SNAPSHOT"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.onehippo.forge.gallery-magick/gallery-magick-cms@3.0.2?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.onehippo.forge.gallery-magick/gallery-magick-cms@3.0.2</a><br><a href="https://ossindex.sonatype.org/component/pkg:maven/org.onehippo.forge.gallery-magick/gallery-magick-cms@3.0.2-SNAPSHOT?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.onehippo.forge.gallery-magick/gallery-magick-cms@3.0.2-SNAPSHOT</a></td>
+ <td data-sort-value="21.0">LOW</td>
+ <td>1</td>
+ <td data-sort-value="3">Low</td>
+ <td>24</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="GOOGLE-HTTP-CLIENT-GSON-1.42.1.JAR"><a href="#l244_19528e0766bbd63187ca0a8d3f5d77577c2c10b5">google-http-client-gson-1.42.1.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:google:gson:1.42.1:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Agoogle&amp;cpe_product=cpe%3A%2F%3Agoogle%3Agson&amp;cpe_version=cpe%3A%2F%3Agoogle%3Agson%3A1.42.1" target="_blank">cpe:2.3:a:google:gson:1.42.1:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/com.google.http-client/google-http-client-gson@1.42.1"><a href="https://ossindex.sonatype.org/component/pkg:maven/com.google.http-client/google-http-client-gson@1.42.1?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/com.google.http-client/google-http-client-gson@1.42.1</a></td>
+ <td data-sort-value="75.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="1">High</td>
+ <td>24</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="HIPPO-CMS-API-14.7.9.JAR: HIPPO-CMS-THEME.JS"><a href="#l728_f066df819ffc535c42a104bd7ae9b6cb19b470f1">hippo-cms-api-14.7.9.jar: hippo-cms-theme.js</a></td>
+ <td data-sort-value=""></td>
+ <td data-sort-value="pkg:javascript/jquery-ui@1.12.1"><a href="https://ossindex.sonatype.org/component/pkg:javascript/jquery-ui@1.12.1?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:javascript/jquery-ui@1.12.1</a></td>
+ <td data-sort-value="61.0">MEDIUM</td>
+ <td>4</td>
+ <td data-sort-value="0"></td>
+ <td>3</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="JACKSON-DATABIND-2.13.4.JAR"><a href="#l1038_98b0edfa8e4084078f10b7b356c300ded4a71491">jackson-databind-2.13.4.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:fasterxml:jackson-databind:2.13.4:*:*:*:*:*:*:*cpe:2.3:a:fasterxml:jackson-modules-java8:2.13.4:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Afasterxml&amp;cpe_product=cpe%3A%2F%3Afasterxml%3Ajackson-databind&amp;cpe_version=cpe%3A%2F%3Afasterxml%3Ajackson-databind%3A2.13.4" target="_blank">cpe:2.3:a:fasterxml:jackson-databind:2.13.4:*:*:*:*:*:*:*</a><br>cpe:2.3:a:fasterxml:jackson-modules-java8:2.13.4:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.4"><a href="https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.4?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.4</a></td>
+ <td data-sort-value="75.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>44</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="JDOM-1.0.JAR"><a href="#l1074_a2ac1cd690ab4c80defe7f9bce14d35934c35cec">jdom-1.0.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:jdom:jdom:1.0:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Ajdom&amp;cpe_product=cpe%3A%2F%3Ajdom%3Ajdom&amp;cpe_version=cpe%3A%2F%3Ajdom%3Ajdom%3A1.0" target="_blank">cpe:2.3:a:jdom:jdom:1.0:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/jdom/jdom@1.0"><a href="https://ossindex.sonatype.org/component/pkg:maven/jdom/jdom@1.0?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/jdom/jdom@1.0</a></td>
+ <td data-sort-value="75.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>44</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="JDOM-1.1.3.JAR"><a href="#l1075_8bdfeb39fa929c35f5e4f0b02d34350db39a1efc">jdom-1.1.3.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:jdom:jdom:1.1.3:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Ajdom&amp;cpe_product=cpe%3A%2F%3Ajdom%3Ajdom&amp;cpe_version=cpe%3A%2F%3Ajdom%3Ajdom%3A1.1.3" target="_blank">cpe:2.3:a:jdom:jdom:1.1.3:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.jdom/jdom@1.1.3"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.jdom/jdom@1.1.3?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.jdom/jdom@1.1.3</a></td>
+ <td data-sort-value="75.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>52</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="JSTL-1.2.JAR"><a href="#l1088_74aca283cd4f4b4f3e425f5820cda58f44409547">jstl-1.2.jar</a></td>
+ <td data-sort-value=""></td>
+ <td data-sort-value="pkg:maven/javax.servlet/jstl@1.2"><a href="https://ossindex.sonatype.org/component/pkg:maven/javax.servlet/jstl@1.2?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/javax.servlet/jstl@1.2</a></td>
+ <td data-sort-value="75.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0"></td>
+ <td>26</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="MAVEN-SHARED-UTILS-3.2.1.JAR"><a href="#l1135_08dd4dfb1d2d8b6969f6462790f82670bcd35ce2">maven-shared-utils-3.2.1.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:apache:maven_shared_utils:3.2.1:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aapache&amp;cpe_product=cpe%3A%2F%3Aapache%3Amaven_shared_utils&amp;cpe_version=cpe%3A%2F%3Aapache%3Amaven_shared_utils%3A3.2.1" target="_blank">cpe:2.3:a:apache:maven_shared_utils:3.2.1:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.apache.maven.shared/maven-shared-utils@3.2.1"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.apache.maven.shared/maven-shared-utils@3.2.1?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.apache.maven.shared/maven-shared-utils@3.2.1</a></td>
+ <td data-sort-value="98.0">CRITICAL</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>29</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="MONITORING-2022.13.1-SNAPSHOT.WAR: JACKSON-DATABIND-2.13.4.JAR"><a href="#l1150_98b0edfa8e4084078f10b7b356c300ded4a71491">monitoring-2022.13.1-SNAPSHOT.war: jackson-databind-2.13.4.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:fasterxml:jackson-databind:2.13.4:*:*:*:*:*:*:*cpe:2.3:a:fasterxml:jackson-modules-java8:2.13.4:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Afasterxml&amp;cpe_product=cpe%3A%2F%3Afasterxml%3Ajackson-databind&amp;cpe_version=cpe%3A%2F%3Afasterxml%3Ajackson-databind%3A2.13.4" target="_blank">cpe:2.3:a:fasterxml:jackson-databind:2.13.4:*:*:*:*:*:*:*</a><br>cpe:2.3:a:fasterxml:jackson-modules-java8:2.13.4:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.4"><a href="https://ossindex.sonatype.org/component/pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.4?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.13.4</a></td>
+ <td data-sort-value="75.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>44</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="MONITORING-2022.13.1-SNAPSHOT.WAR: TOMCAT-API-9.0.62.JAR"><a href="#l1151_8b19b4ce3d06fc9da411b168cd7e4553a563e944">monitoring-2022.13.1-SNAPSHOT.war: tomcat-api-9.0.62.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:apache:tomcat:9.0.62:*:*:*:*:*:*:*cpe:2.3:a:apache_tomcat:apache_tomcat:9.0.62:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aapache&amp;cpe_product=cpe%3A%2F%3Aapache%3Atomcat&amp;cpe_version=cpe%3A%2F%3Aapache%3Atomcat%3A9.0.62" target="_blank">cpe:2.3:a:apache:tomcat:9.0.62:*:*:*:*:*:*:*</a><br><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aapache_tomcat&amp;cpe_product=cpe%3A%2F%3Aapache_tomcat%3Aapache_tomcat&amp;cpe_version=cpe%3A%2F%3Aapache_tomcat%3Aapache_tomcat%3A9.0.62" target="_blank">cpe:2.3:a:apache_tomcat:apache_tomcat:9.0.62:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value=""></td>
+ <td data-sort-value="75.0">HIGH</td>
+ <td>2</td>
+ <td data-sort-value="0">Highest</td>
+ <td>20</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="MYSQL-CONNECTOR-JAVA-5.1.49.JAR"><a href="#l1154_cf76d2e4c9c3782a85c15c87bec5772b34ffd0e5">mysql-connector-java-5.1.49.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:mysql:mysql:5.1.49:*:*:*:*:*:*:*cpe:2.3:a:oracle:mysql_connector\/j:5.1.49:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Amysql&amp;cpe_product=cpe%3A%2F%3Amysql%3Amysql&amp;cpe_version=cpe%3A%2F%3Amysql%3Amysql%3A5.1.49" target="_blank">cpe:2.3:a:mysql:mysql:5.1.49:*:*:*:*:*:*:*</a><br><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aoracle&amp;cpe_product=cpe%3A%2F%3Aoracle%3Amysql_connector%2Fj&amp;cpe_version=cpe%3A%2F%3Aoracle%3Amysql_connector%2Fj%3A5.1.49" target="_blank">cpe:2.3:a:oracle:mysql_connector\/j:5.1.49:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/mysql/mysql-connector-java@5.1.49"><a href="https://ossindex.sonatype.org/component/pkg:maven/mysql/mysql-connector-java@5.1.49?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/mysql/mysql-connector-java@5.1.49</a></td>
+ <td data-sort-value="88.0">HIGH</td>
+ <td>3</td>
+ <td data-sort-value="0">Highest</td>
+ <td>38</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="OAK-JACKRABBIT-API-1.38.0.JAR"><a href="#l1176_327960df365412d59788911d8a2366a89509454e">oak-jackrabbit-api-1.38.0.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:apache:jackrabbit:1.38.0:*:*:*:*:*:*:*cpe:2.3:a:apache:jackrabbit_oak:1.38.0:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aapache&amp;cpe_product=cpe%3A%2F%3Aapache%3Ajackrabbit&amp;cpe_version=cpe%3A%2F%3Aapache%3Ajackrabbit%3A1.38.0" target="_blank">cpe:2.3:a:apache:jackrabbit:1.38.0:*:*:*:*:*:*:*</a><br><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aapache&amp;cpe_product=cpe%3A%2F%3Aapache%3Ajackrabbit_oak&amp;cpe_version=cpe%3A%2F%3Aapache%3Ajackrabbit_oak%3A1.38.0" target="_blank">cpe:2.3:a:apache:jackrabbit_oak:1.38.0:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.apache.jackrabbit/oak-jackrabbit-api@1.38.0"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.apache.jackrabbit/oak-jackrabbit-api@1.38.0?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.apache.jackrabbit/oak-jackrabbit-api@1.38.0</a></td>
+ <td data-sort-value="64.0">MEDIUM</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>35</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.CORE.COMMANDS-3.6.0.JAR"><a href="#l1183_11c16b281bc722e9acb07a0562f0aa6e824d6215">org.eclipse.core.commands-3.6.0.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.6.0:*:*:*:*:*:*:*">cpe:2.3:a:eclipse:equinox:3.6.0:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/org.eclipse.core/org.eclipse.core.commands@3.6.0"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.core/org.eclipse.core.commands@3.6.0?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.core/org.eclipse.core.commands@3.6.0</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="3">Low</td>
+ <td>29</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.CORE.CONTENTTYPE-3.4.100.JAR"><a href="#l1184_7052e115041d04410a4519a61307502fb7c138e6">org.eclipse.core.contenttype-3.4.100.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.4.100:*:*:*:*:*:*:*">cpe:2.3:a:eclipse:equinox:3.4.100:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/org.eclipse.core/org.eclipse.core.contenttype@3.4.100"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.core/org.eclipse.core.contenttype@3.4.100?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.core/org.eclipse.core.contenttype@3.4.100</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="3">Low</td>
+ <td>30</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.CORE.FILESYSTEM-1.3.100.JAR"><a href="#l1186_37fce4f5488a21ce36021d4909acaf5687e1595e">org.eclipse.core.filesystem-1.3.100.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:1.3.100:*:*:*:*:*:*:*">cpe:2.3:a:eclipse:equinox:1.3.100:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/org.eclipse.core/org.eclipse.core.filesystem@1.3.100"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.core/org.eclipse.core.filesystem@1.3.100?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.core/org.eclipse.core.filesystem@1.3.100</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="3">Low</td>
+ <td>30</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.CORE.JOBS-3.5.100.JAR"><a href="#l1187_7e99e30a7f23423a250744af33009fc2fbcdf241">org.eclipse.core.jobs-3.5.100.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.5.100:*:*:*:*:*:*:*">cpe:2.3:a:eclipse:equinox:3.5.100:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/org.eclipse.core/org.eclipse.core.jobs@3.5.100"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.core/org.eclipse.core.jobs@3.5.100?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.core/org.eclipse.core.jobs@3.5.100</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="3">Low</td>
+ <td>30</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.CORE.RUNTIME-3.7.0.JAR"><a href="#l1190_6658c235056134f7e86295e751129508802d71f2">org.eclipse.core.runtime-3.7.0.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.7.0:*:*:*:*:*:*:*">cpe:2.3:a:eclipse:equinox:3.7.0:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/org.eclipse.core/org.eclipse.core.runtime@3.7.0"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.core/org.eclipse.core.runtime@3.7.0?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.core/org.eclipse.core.runtime@3.7.0</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="3">Low</td>
+ <td>32</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.EQUINOX.COMMON-3.6.0.JAR"><a href="#l1191_78e5d0b8516b042495660da36ce5114650f8f156">org.eclipse.equinox.common-3.6.0.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.6.0:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aeclipse&amp;cpe_product=cpe%3A%2F%3Aeclipse%3Aequinox&amp;cpe_version=cpe%3A%2F%3Aeclipse%3Aequinox%3A3.6.0" target="_blank">cpe:2.3:a:eclipse:equinox:3.6.0:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.eclipse.equinox/org.eclipse.equinox.common@3.6.0"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.equinox/org.eclipse.equinox.common@3.6.0?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.equinox/org.eclipse.equinox.common@3.6.0</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>32</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.EQUINOX.PREFERENCES-3.4.1.JAR"><a href="#l1192_6770649a91266a4a17747b201723a1fea8c8a198">org.eclipse.equinox.preferences-3.4.1.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.4.1:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aeclipse&amp;cpe_product=cpe%3A%2F%3Aeclipse%3Aequinox&amp;cpe_version=cpe%3A%2F%3Aeclipse%3Aequinox%3A3.4.1" target="_blank">cpe:2.3:a:eclipse:equinox:3.4.1:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.eclipse.equinox/org.eclipse.equinox.preferences@3.4.1"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.equinox/org.eclipse.equinox.preferences@3.4.1?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.equinox/org.eclipse.equinox.preferences@3.4.1</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>34</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.EQUINOX.REGISTRY-3.5.101.JAR"><a href="#l1193_eac5aeb82732847bc7f11e2b5c934004c4c7a543">org.eclipse.equinox.registry-3.5.101.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.5.101:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aeclipse&amp;cpe_product=cpe%3A%2F%3Aeclipse%3Aequinox&amp;cpe_version=cpe%3A%2F%3Aeclipse%3Aequinox%3A3.5.101" target="_blank">cpe:2.3:a:eclipse:equinox:3.5.101:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.eclipse.equinox/org.eclipse.equinox.registry@3.5.101"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.equinox/org.eclipse.equinox.registry@3.5.101?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.equinox/org.eclipse.equinox.registry@3.5.101</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>34</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="ORG.ECLIPSE.TEXT-3.5.101.JAR"><a href="#l1199_54a442442c575e6809c18f7dfc848755a58ab955">org.eclipse.text-3.5.101.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:eclipse:equinox:3.5.101:*:*:*:*:*:*:*">cpe:2.3:a:eclipse:equinox:3.5.101:*:*:*:*:*:*:*</td>
+ <td data-sort-value="pkg:maven/org.eclipse.text/org.eclipse.text@3.5.101"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.eclipse.text/org.eclipse.text@3.5.101?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.eclipse.text/org.eclipse.text@3.5.101</a></td>
+ <td data-sort-value="81.0">HIGH</td>
+ <td>1</td>
+ <td data-sort-value="3">Low</td>
+ <td>26</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="SNAKEYAML-1.26.JAR"><a href="#l1219_a78a8747147d2c5807683e76ec2b633e95c14fe9">snakeyaml-1.26.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:snakeyaml_project:snakeyaml:1.26:*:*:*:*:*:*:*cpe:2.3:a:yaml_project:yaml:1.26:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Asnakeyaml_project&amp;cpe_product=cpe%3A%2F%3Asnakeyaml_project%3Asnakeyaml&amp;cpe_version=cpe%3A%2F%3Asnakeyaml_project%3Asnakeyaml%3A1.26" target="_blank">cpe:2.3:a:snakeyaml_project:snakeyaml:1.26:*:*:*:*:*:*:*</a><br><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Ayaml_project&amp;cpe_product=cpe%3A%2F%3Ayaml_project%3Ayaml&amp;cpe_version=cpe%3A%2F%3Ayaml_project%3Ayaml%3A1.26" target="_blank">cpe:2.3:a:yaml_project:yaml:1.26:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.yaml/snakeyaml@1.26"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.yaml/snakeyaml@1.26?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.yaml/snakeyaml@1.26</a></td>
+ <td data-sort-value="75.0">HIGH</td>
+ <td>5</td>
+ <td data-sort-value="0">Highest</td>
+ <td>27</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="SNAKEYAML-1.31.JAR"><a href="#l1220_cf26b7b05fef01e7bec00cb88ab4feeeba743e12">snakeyaml-1.31.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:snakeyaml_project:snakeyaml:1.31:*:*:*:*:*:*:*cpe:2.3:a:yaml_project:yaml:1.31:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Asnakeyaml_project&amp;cpe_product=cpe%3A%2F%3Asnakeyaml_project%3Asnakeyaml&amp;cpe_version=cpe%3A%2F%3Asnakeyaml_project%3Asnakeyaml%3A1.31" target="_blank">cpe:2.3:a:snakeyaml_project:snakeyaml:1.31:*:*:*:*:*:*:*</a><br><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Ayaml_project&amp;cpe_product=cpe%3A%2F%3Ayaml_project%3Ayaml&amp;cpe_version=cpe%3A%2F%3Ayaml_project%3Ayaml%3A1.31" target="_blank">cpe:2.3:a:yaml_project:yaml:1.31:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.yaml/snakeyaml@1.31"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.yaml/snakeyaml@1.31?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.yaml/snakeyaml@1.31</a></td>
+ <td data-sort-value="65.0">MEDIUM</td>
+ <td>2</td>
+ <td data-sort-value="0">Highest</td>
+ <td>27</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="SPRING-CORE-5.3.22.JAR"><a href="#l1226_661fc01832716c7eedebf995c6841b2f7117c63d">spring-core-5.3.22.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:pivotal_software:spring_framework:5.3.22:*:*:*:*:*:*:*cpe:2.3:a:springsource:spring_framework:5.3.22:*:*:*:*:*:*:*cpe:2.3:a:vmware:spring_framework:5.3.22:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Apivotal_software&amp;cpe_product=cpe%3A%2F%3Apivotal_software%3Aspring_framework&amp;cpe_version=cpe%3A%2F%3Apivotal_software%3Aspring_framework%3A5.3.22" target="_blank">cpe:2.3:a:pivotal_software:spring_framework:5.3.22:*:*:*:*:*:*:*</a><br><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aspringsource&amp;cpe_product=cpe%3A%2F%3Aspringsource%3Aspring_framework&amp;cpe_version=cpe%3A%2F%3Aspringsource%3Aspring_framework%3A5.3.22" target="_blank">cpe:2.3:a:springsource:spring_framework:5.3.22:*:*:*:*:*:*:*</a><br><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Avmware&amp;cpe_product=cpe%3A%2F%3Avmware%3Aspring_framework&amp;cpe_version=cpe%3A%2F%3Avmware%3Aspring_framework%3A5.3.22" target="_blank">cpe:2.3:a:vmware:spring_framework:5.3.22:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.springframework/spring-core@5.3.22"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.springframework/spring-core@5.3.22?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.springframework/spring-core@5.3.22</a></td>
+ <td data-sort-value="98.0">CRITICAL</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>30</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="SPRING-SECURITY-CRYPTO-5.6.7.JAR"><a href="#l1228_d4940fe490fcb6e99977ef37bfb41e3a2a9f5a78">spring-security-crypto-5.6.7.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:pivotal_software:spring_security:5.6.7:*:*:*:*:*:*:*cpe:2.3:a:vmware:spring_security:5.6.7:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Apivotal_software&amp;cpe_product=cpe%3A%2F%3Apivotal_software%3Aspring_security&amp;cpe_version=cpe%3A%2F%3Apivotal_software%3Aspring_security%3A5.6.7" target="_blank">cpe:2.3:a:pivotal_software:spring_security:5.6.7:*:*:*:*:*:*:*</a><br><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Avmware&amp;cpe_product=cpe%3A%2F%3Avmware%3Aspring_security&amp;cpe_version=cpe%3A%2F%3Avmware%3Aspring_security%3A5.6.7" target="_blank">cpe:2.3:a:vmware:spring_security:5.6.7:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.springframework.security/spring-security-crypto@5.6.7"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.springframework.security/spring-security-crypto@5.6.7?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.springframework.security/spring-security-crypto@5.6.7</a></td>
+ <td data-sort-value="65.0">MEDIUM</td>
+ <td>1</td>
+ <td data-sort-value="0">Highest</td>
+ <td>29</td>
+</tr>
+<tr class=" vulnerable">
+ <td data-sort-value="WICKET15-TREE-7.1.0.JAR"><a href="#l1637_b30079b1ae5e1a98eb17c7145840455dae2e98a8">wicket15-tree-7.1.0.jar</a></td>
+ <td data-sort-value="cpe:2.3:a:apache:wicket:7.1.0:*:*:*:*:*:*:*"><a href="https://nvd.nist.gov/vuln/search/results?form_type=Advanced&amp;results_type=overview&amp;search_type=all&amp;cpe_vendor=cpe%3A%2F%3Aapache&amp;cpe_product=cpe%3A%2F%3Aapache%3Awicket&amp;cpe_version=cpe%3A%2F%3Aapache%3Awicket%3A7.1.0" target="_blank">cpe:2.3:a:apache:wicket:7.1.0:*:*:*:*:*:*:*</a></td>
+ <td data-sort-value="pkg:maven/org.wicketstuff/wicket15-tree@7.1.0"><a href="https://ossindex.sonatype.org/component/pkg:maven/org.wicketstuff/wicket15-tree@7.1.0?utm_source=dependency-check&amp;utm_medium=integration&amp;utm_content=6.5.0" target="_blank">pkg:maven/org.wicketstuff/wicket15-tree@7.1.0</a></td>
+ <td data-sort-value="88.0">HIGH</td>
+ <td>5</td>
+ <td data-sort-value="0">Highest</td>
+ <td>20</td>
+</tr
+</tbody>
+</table>

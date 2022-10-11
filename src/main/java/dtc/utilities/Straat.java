@@ -19,20 +19,8 @@ public class Straat {
         return PATH_TO_INPUT + name + FILE_TYPE;
     }
 
-    public String getPathToResultFileTable() {
-        return getPathToResultFile() + "/table" + FILE_TYPE;
-    }
-
-    public String getPathToResultFileRemoved() {
-        return getPathToResultFile() + "/removed" + FILE_TYPE;
-    }
-
-    public String getPathToResultFileAdded() {
-        return getPathToResultFile() + "/added" + FILE_TYPE;
-    }
-
     public String getPathToResultFile() {
-        return PATH_TO_RESULTS_FILE + name;
+        return PATH_TO_RESULTS_FILE + name + FILE_TYPE;
     }
 
     @Override

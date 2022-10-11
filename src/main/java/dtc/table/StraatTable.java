@@ -5,12 +5,12 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
 public class StraatTable {
-    List<String> header;
+    Element headerElement;
     List<List<String>> body;
     List<Element> bodyElements;
 
@@ -18,7 +18,6 @@ public class StraatTable {
 
     public StraatTable(Straat straat) {
         this.straat = straat;
-        header = new ArrayList<>();
         body = new ArrayList<>();
         bodyElements = new ArrayList<>();
     }
@@ -27,12 +26,21 @@ public class StraatTable {
         return straat;
     }
 
-    void initializeHeaderAndBody(Elements header, Elements body) {
+    void initializeHeader(Elements header) {
         if(!header.isEmpty()) {
-            this.header = TableUtils.extractRow(header.get(0));
-        } else {
-            this.header = Collections.emptyList();
+            headerElement = header.get(0);
         }
+    }
+
+    public Element getHeader() {
+        return headerElement;
+    }
+
+    void initializeHeader(Element header) {
+        headerElement = header;
+    }
+
+    void initializeBody(Elements body) {
         this.body = new ArrayList<>();
         for (Element row : body ) {
             bodyElements.add(row);
@@ -44,13 +52,6 @@ public class StraatTable {
         return body.size();
     }
 
-    public int getColumnSize() {
-        if(!body.isEmpty()) {
-            return body.size();
-        }
-        return 0;
-    }
-
     public String getRow(int rowNo) {
         return String.join(" ", body.get(rowNo));
     }
@@ -60,7 +61,28 @@ public class StraatTable {
     }
 
     public List<String> toHTMLTable() {
-        return Collections.emptyList();
+        List<String> html = new ArrayList<>();
+        html.add("<table>");
+        html.add("<theader>");
+        html.addAll(generateHeaderHTML());
+        html.add("</theader>");
+        html.add("<tbody>");
+        html.addAll(generateBodyHTML());
+        html.add("</tbody>");
+        html.add("</table>");
+        return html;
+    }
+
+    private List<String> generateHeaderHTML() {
+        String html = headerElement.toString();
+        html = html.replace(">, <", ">\n<");
+        return Arrays.asList(html.split("\n"));
+    }
+
+    private List<String> generateBodyHTML() {
+        String html = bodyElements.toString();
+        html = html.substring(1, html.length() -2).replace(">, <", ">\n<");
+        return Arrays.asList(html.split("\n"));
     }
 
     public Iterator<Element> getRows() {

@@ -62,5 +62,11 @@ Q
 +src/test/java/dtc/ApplicationTestPaths.java,6\8\68d222d3665ae961f2685864b031e47de3a841d5
 X
 (testdata/simpletest/input/confluence.txt,4\e\4ef6b2ef66674b8ac30a177342d93e0d9c1cb6ab
-h
-8src/main/java/dtc/table/TableCompareResultsOverview.java,a\1\a130cf04719e4b0c5de96f7e6ea3bf842058dc34
+`
+0src/test/java/dtc/table/ConfluenceTableTest.java,e\6\e61d14b23a197937fde1815796a9260dad2758f1
+b
+2src/main/java/dtc/tablecomparer/TableComparer.java,2\2\228cbde205b068ec38fc7a90eafb27f1f4645e0e
+p
+@src/main/java/dtc/tablecomparer/TableCompareResultsOverview.java,8\6\86263e5ba189f6d6c61892002598dfcde46601cb
+\
+,src/main/java/dtc/table/ConfluenceTable.java,a\5\a5d4065c5bdc750e76200e45a2fc00ba0e56aa6f

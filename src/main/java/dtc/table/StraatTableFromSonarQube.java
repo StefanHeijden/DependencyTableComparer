@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StraatTableFromSonarQube extends StraatTable {
-    public final String[] MINIMIZABLE_ROWS = {
+    protected static final String[] MINIMIZABLE_ROWS = {
             "yui-2.xx-sources-1.01.12.jar",
             "wicket-extjs-bundle-0.26.0.jar",
             "wicket-datetime-7.18.0.jar",
@@ -23,15 +23,14 @@ public class StraatTableFromSonarQube extends StraatTable {
         Element table = TableUtils.getDependencySummaryTable(document);
         Elements rows = TableUtils.extractVulnerableBodyRowsFromTable(table);
         rows = minimizeRows(rows);
-        initializeHeaderAndBody(TableUtils.extractHeaderRowsFromTable(table), rows);
+        initializeHeader(TableUtils.extractHeaderRowsFromTable(table));
+        initializeBody(rows);
     }
 
     private Elements minimizeRows(Elements rows) {
         List<Element> minimizedRows = new ArrayList<>();
         for (Element row : rows) {
-            if(isRowMinimizable(row) && !containsMinimizedRow(minimizedRows, getMinimizableRow(row))) {
-                    minimizedRows.add(row);
-            } else {
+            if(!(isRowMinimizable(row) && !containsMinimizedRow(minimizedRows, getMinimizableRow(row)))) {
                 minimizedRows.add(row);
             }
         }
