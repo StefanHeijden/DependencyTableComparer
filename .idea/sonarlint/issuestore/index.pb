@@ -66,3 +66,17 @@ X
 0src/test/java/dtc/table/ConfluenceTableTest.java,e\6\e61d14b23a197937fde1815796a9260dad2758f1
 \
 ,src/main/java/dtc/table/ConfluenceTable.java,a\5\a5d4065c5bdc750e76200e45a2fc00ba0e56aa6f
+E
+input/allestraten.txt,3\a\3a994e3bda3618edbfaefdada18dae2d7d61fdad
+9
+	table.txt,1\2\12bbff45acb0b51ef8ce453c313ee53c4083b89a
+W
+'src/main/java/dtc/utilities/Straat.java,9\3\9328b50515d0f59b5f0eed1984e7b2fe52190119
+b
+2src/test/java/dtc/DependencyTableComparerTest.java,6\d\6d1853584a1c09487f472761df6db5413887227f
+f
+6src/main/java/dtc/table/StraatTableFromConfluence.java,c\0\c0bae8ac98ea5e3c9921287d021f8ee07cc70e39
+e
+5src/main/java/dtc/table/StraatTableFromSonarQube.java,3\d\3d0a561b6486a0b88e34d32fc09c45b6afbc2f42
+b
+2src/main/java/dtc/utilities/ApplicationsPaths.java,4\6\4654833420269aad268059fe13331287f65983f1

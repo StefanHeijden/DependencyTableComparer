@@ -87,6 +87,7 @@ public class StraatTable {
                 uniqueBodyElements.add(row);
             }
         }
+        bodyElements = new Elements(uniqueBodyElements);
     }
     
     private boolean doesUniqueBodyElementsContainRow(List<Element> uniqueBodyElements, Element rowToCheck) {
