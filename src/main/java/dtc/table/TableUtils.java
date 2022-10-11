@@ -17,15 +17,6 @@ public class TableUtils {
         return Jsoup.parse(confluencePage);
     }
 
-    public static List<List<String>> extractTable(Document doc) {
-        List<List<String>> tableText = new ArrayList<>();
-        Elements rows = doc.select("tr");
-        for(Element row : rows) {
-            tableText.add(extractRow(row));
-        }
-        return tableText;
-    }
-
     static List<String> extractRow(Element row) {
         List<String> rowText = new ArrayList<>();
         Elements columns = row.select("td");
@@ -51,8 +42,6 @@ public class TableUtils {
         return tables.select("tbody").select(".vulnerable");
     }
 
-    private TableUtils() {}
-
     public static Element getDependencySummaryTable(Document document) {
         Elements tables = Jsoup.parse(document.select("iframe").attr("srcdoc")).select("#summaryTable");
         if (tables.size() > 1) {
@@ -63,4 +52,19 @@ public class TableUtils {
         }
         return Jsoup.parse(document.select("iframe").attr("srcdoc")).select("#summaryTable").get(0);
     }
+
+    public static List<String> toHTMLTable(List<String> header, List<String> body) {
+        List<String> html = new ArrayList<>();
+        html.add("<table>");
+        html.add("<theader>");
+        html.addAll(header);
+        html.add("</theader>");
+        html.add("<tbody>");
+        html.addAll(body);
+        html.add("</tbody>");
+        html.add("</table>");
+        return html;
+    }
+
+    private TableUtils() {}
 }

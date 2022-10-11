@@ -1,7 +1,9 @@
 package dtc.tableprinter;
 
 import dtc.table.StraatTable;
+import dtc.table.StraatTableAddedDependencies;
 import dtc.table.StraatTableForHighVulnerabilties;
+import dtc.table.StraatTableRemovedDependencies;
 import dtc.tablecomparer.TableCompareResults;
 import dtc.tablecomparer.TableCompareResultsOverview;
 
@@ -14,13 +16,28 @@ import java.nio.file.Paths;
 import java.util.Iterator;
 import java.util.List;
 
+import static dtc.utilities.ApplicationsPaths.PATH_TO_RESULTS_FILE_ADDED_DEPENDENCIES;
 import static dtc.utilities.ApplicationsPaths.PATH_TO_RESULTS_FILE_ALL_STRATEN;
+import static dtc.utilities.ApplicationsPaths.PATH_TO_RESULTS_FILE_REMOVED_DEPENDENCIES;
 
 public class TablePrinter {
 
     public static void printResults(TableCompareResultsOverview tableCompareResults) {
         printHTMLTables(tableCompareResults);
+        printAddedDependencies(tableCompareResults);
+        printRemovedDependencies(tableCompareResults);
         printHighVulnerabilities(tableCompareResults);
+    }
+
+    private static void printRemovedDependencies(TableCompareResultsOverview tableCompareResults) {
+        StraatTable highVulnerabilitiesTable = new StraatTableRemovedDependencies(tableCompareResults);
+        printToFile(highVulnerabilitiesTable.toHTMLTable(), PATH_TO_RESULTS_FILE_REMOVED_DEPENDENCIES);
+    }
+
+    private static void printAddedDependencies(TableCompareResultsOverview tableCompareResults) {
+        StraatTable highVulnerabilitiesTable = new StraatTableAddedDependencies(tableCompareResults);
+        printToFile(highVulnerabilitiesTable.toHTMLTable(), PATH_TO_RESULTS_FILE_ADDED_DEPENDENCIES);
+
     }
 
     private static void printHTMLTables(TableCompareResultsOverview tableCompareResults) {

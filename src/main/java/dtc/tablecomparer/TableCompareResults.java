@@ -2,17 +2,17 @@ package dtc.tablecomparer;
 
 import dtc.table.StraatTable;
 import dtc.utilities.Straat;
+import org.jsoup.nodes.Element;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TableCompareResults {
     private final Straat straat;
     private final StraatTable straatTable;
-    private final List<String> removedRows;
-    private final List<String> addedRows;
+    private final List<Element> removedRows;
+    private final List<Element> addedRows;
 
-    public TableCompareResults(StraatTable straatTable,  List<String> removedRows, List<String> addedRows) {
+    public TableCompareResults(StraatTable straatTable,  List<Element> removedRows, List<Element> addedRows) {
         straat = straatTable.getStraat();
         this.straatTable = straatTable;
         this.removedRows = removedRows;
@@ -27,24 +27,11 @@ public class TableCompareResults {
         return straat;
     }
 
-    public List<String> getAddedRows() {
+    public List<Element> getAddedRows() {
         return addedRows;
     }
 
-    public List<String> getRemovedRows() {
+    public List<Element> getRemovedRows() {
         return removedRows;
-    }
-    
-    public List<String> toFileLines() {
-        List<String> fileLines = new ArrayList<>();
-        fileLines.add("Removed dependencies");
-        fileLines.addAll(removedRows);
-        fileLines.add("---------------------------------------------------------------------");
-        fileLines.add("Added dependencies");
-        fileLines.addAll(addedRows);
-        fileLines.add("---------------------------------------------------------------------");
-        fileLines.add("Table of dependencies");
-        fileLines.addAll(straatTable.toHTMLTable());
-        return fileLines;
     }
 }

@@ -52,8 +52,8 @@ public class StraatTable {
         return body.size();
     }
 
-    public String getRow(int rowNo) {
-        return String.join(" ", body.get(rowNo));
+    public Element getRow(int rowNo) {
+        return bodyElements.get(rowNo);
     }
 
     public int rows() {
@@ -61,16 +61,7 @@ public class StraatTable {
     }
 
     public List<String> toHTMLTable() {
-        List<String> html = new ArrayList<>();
-        html.add("<table>");
-        html.add("<theader>");
-        html.addAll(generateHeaderHTML());
-        html.add("</theader>");
-        html.add("<tbody>");
-        html.addAll(generateBodyHTML());
-        html.add("</tbody>");
-        html.add("</table>");
-        return html;
+        return TableUtils.toHTMLTable(generateHeaderHTML(), generateBodyHTML());
     }
 
     private List<String> generateHeaderHTML() {

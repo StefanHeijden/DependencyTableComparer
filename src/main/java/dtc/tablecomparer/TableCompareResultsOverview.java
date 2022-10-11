@@ -1,5 +1,7 @@
 package dtc.tablecomparer;
 
+import org.jsoup.nodes.Element;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -16,5 +18,12 @@ public class TableCompareResultsOverview {
 
     public Iterator<TableCompareResults> getTableCompareResults() {
         return allTableCompareResults.iterator();
+    }
+
+    public Element getHeader() {
+        if(!allTableCompareResults.isEmpty()) {
+            return allTableCompareResults.get(0).getStraatTable().getHeader();
+        }
+        throw new ArrayIndexOutOfBoundsException("TableCompareResultsOverview has no entries.");
     }
 }
